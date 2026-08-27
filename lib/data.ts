@@ -28,9 +28,9 @@ export const languages = [
 ];
 
 export const devSkills = [
-  "HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS",
-  "Node.js", "Express.js", "PHP", "Laravel", "Java",
-  "MySQL", "PostgreSQL", "API REST", "Git / GitHub", "Design responsive",
+  "HTML", "CSS", "JavaScript", "React.js", "Angular", "Tailwind CSS",
+  "Node.js", "Express.js", "Java / Spring Boot", "PHP", "Laravel", "Python",
+  "MySQL", "PostgreSQL", "MongoDB", "API REST", "Git / GitHub", "Design responsive",
 ];
 
 export const netSkills = [
@@ -40,7 +40,45 @@ export const netSkills = [
 ];
 
 export const tools = [
-  "Git", "GitHub", "Postman", "VS Code", "Cisco Packet Tracer", "VirtualBox", "VMware",
+  "Git", "GitHub", "VS Code", "Postman", "Claude Code", "N8N", "Odoo",
+  "Linux", "Cisco Packet Tracer", "VirtualBox", "VMware",
+];
+
+export const experience: {
+  date: string;
+  company: string;
+  role: string;
+  description: string;
+  stack: string[];
+  active: boolean;
+}[] = [
+  {
+    date: "2026 – En cours",
+    company: "Monétique",
+    role: "Stage — Développement Web",
+    description:
+      "Développement web et automatisation de processus, avec intégration d'outils d'IA et de workflows.",
+    stack: ["Python", "JavaScript", "XML", "PostgreSQL", "SEO", "N8N", "Odoo"],
+    active: true,
+  },
+  {
+    date: "2025 · 6 mois",
+    company: "R&R Development",
+    role: "Stage — Développement Full Stack",
+    description:
+      "Développement d'une application de gestion immobilière de bout en bout.",
+    stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+    active: false,
+  },
+  {
+    date: "3 mois",
+    company: "FY-TECH",
+    role: "Stage — Intégrateur Web",
+    description:
+      "Développement d'un site vitrine pour une agence de location de voitures.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    active: false,
+  },
 ];
 
 export type ProjectCategory = "dev" | "net";
@@ -139,6 +177,7 @@ export const cv = {
 export const navLinks = [
   { href: "#profil", label: "Profil" },
   { href: "#competences", label: "Compétences" },
+  { href: "#experience", label: "Expérience" },
   { href: "#projets", label: "Projets" },
   { href: "#formation", label: "Formation" },
   { href: "#contact", label: "Contact" },
