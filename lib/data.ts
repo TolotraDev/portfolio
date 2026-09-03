@@ -167,7 +167,7 @@ export const stats = [
 ];
 
 export const cv = {
-  href: "/cv/TOLOTRA_NOMENJANAHARY.pdf",
+  href: "/cv/cv.pdf",
   label: "Télécharger mon CV",
 };
 
