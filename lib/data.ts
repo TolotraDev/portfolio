@@ -30,7 +30,7 @@ export const languages = [
 export const skillGroups: { title: string; items: string[] }[] = [
   {
     title: "Frontend",
-    items: ["HTML / CSS", "JavaScript", "React.js", "Angular", "Tailwind CSS"],
+    items: ["HTML / CSS", "JavaScript", "TypeScript", "React.js", "Angular", "Tailwind CSS"],
   },
   {
     title: "Backend",
@@ -87,30 +87,40 @@ export const projects: {
   title: string;
   description: string;
   stack: string[];
+  url: string;
+  image: string;
 }[] = [
   {
-    title: "Application de gestion immobilière",
+    title: "Mitady-Trano",
     description:
-      "Application full-stack de gestion de biens (locations & ventes) développée en stage chez R&R Development.",
+      "Plateforme immobilière full-stack : recherche de maisons, appartements et terrains à vendre ou à louer partout à Madagascar, avec filtres avancés.",
     stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+    url: "https://mitady-trano.vercel.app/",
+    image: "/images/projects/mitady-trano.webp",
   },
   {
-    title: "Site vitrine — agence de voiture",
+    title: "Autovia",
     description:
-      "Intégration d'un site vitrine responsive pour une agence de location de voitures, réalisé en stage chez FY-TECH.",
+      "Site vitrine responsive et animé pour une agence automobile premium, présentant une collection de véhicules et un parcours de réservation.",
     stack: ["HTML", "CSS", "JavaScript"],
+    url: "https://autovia-xi.vercel.app/",
+    image: "/images/projects/autovia.webp",
   },
   {
     title: "EcoTourMg",
     description:
-      "Application web full-stack reliant les touristes aux communautés locales à Madagascar.",
-    stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL"],
+      "Application web reliant les voyageurs aux communautés locales de Madagascar : destinations, expériences authentiques et planification de voyage.",
+    stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+    url: "https://eco-tour-mg.vercel.app/",
+    image: "/images/projects/ecotourmg.webp",
   },
   {
     title: "FormaPlus",
     description:
-      "Gestion d'un centre de formation : étudiants, cours, formateurs et paiements.",
-    stack: ["PHP", "Laravel", "Blade", "MySQL"],
+      "Plateforme de gestion d'un centre de formation : étudiants, formations, paiements et tableau de bord statistiques.",
+    stack: ["React.js", "Tailwind CSS", "TypeScript"],
+    url: "https://forma-plus-rho.vercel.app/",
+    image: "/images/projects/formaplus.webp",
   },
 ];
 

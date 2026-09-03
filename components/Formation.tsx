@@ -26,7 +26,7 @@ export function Formation() {
                   <span className="absolute h-5 w-5 animate-ping rounded-sm bg-accent-strong/50" />
                 )}
               </span>
-              <div className="rounded-md border border-border bg-background p-6">
+              <div className="rounded-md border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5">
                 <span className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
                   {item.date}
                 </span>

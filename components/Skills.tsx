@@ -22,7 +22,7 @@ export function Skills() {
               <Reveal
                 key={group.title}
                 delay={i * 100}
-                className="rounded-md border border-border bg-background p-8"
+                className="rounded-md border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-sm border border-accent/40 bg-accent/10 text-accent">
