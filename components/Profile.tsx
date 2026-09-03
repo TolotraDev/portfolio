@@ -58,11 +58,11 @@ export function Profile() {
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-muted">Formation</dt>
-                <dd className="text-right font-medium">EMIT Fianarantsoa, 2023–2026</dd>
+                <dd className="text-right font-medium">EMIT Fianarantsoa, 2024–2026</dd>
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-muted">Recherche</dt>
-                <dd className="text-right font-medium">Stage dev ou admin sys/réseaux</dd>
+                <dd className="text-right font-medium">Stage en développement web</dd>
               </div>
             </dl>
           </Reveal>

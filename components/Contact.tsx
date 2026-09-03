@@ -20,8 +20,8 @@ export function Contact() {
               Discutons de votre prochain projet ou de mon prochain stage
             </h2>
             <p className="mt-4 text-muted">
-              Disponible pour un stage en développement web ou en administration systèmes &amp;
-              réseaux. Je réponds rapidement par email ou téléphone.
+              Disponible pour un stage en développement web full-stack. Je réponds
+              rapidement par email ou téléphone.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 font-mono text-sm">

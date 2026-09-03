@@ -1,17 +1,16 @@
 export const profile = {
   name: "Tolotra Nomenjanahary",
-  roles: ["Développeur Full Stack", "Administrateur Systèmes & Réseaux"],
-  location: "Fianarantsoa, Madagascar",
+  roles: ["Développeur Full Stack", "Développeur Web", "Frontend & Backend"],
+  location: "Mahajanga, Madagascar",
   email: "tanjoniainatolotra6@gmail.com",
   phone: "+261 34 71 357 18",
   phoneHref: "+261347135718",
   summary: [
-    `Étudiant en informatique motivé, alliant le développement web full-stack à
-     l'administration systèmes et réseaux. À l'aise pour créer des applications web
-     de bout en bout comme pour mettre en place et gérer une infrastructure IT.`,
-    `Je souhaite rejoindre une équipe comme stagiaire développeur ou administrateur,
-     contribuer à des projets réels et progresser par la pratique — en apprenant vite,
-     en résolvant des problèmes concrets, et en restant fiable sur la durée.`,
+    `Du premier écran au dernier endpoint, j'aime comprendre comment les pièces
+     s'assemblent. Je transforme des idées en applications fonctionnelles, avec une
+     attention particulière portée à l'expérience et à la simplicité.`,
+    `Toujours en train d'apprendre, toujours en train de construire — je progresse
+     par la pratique, sur des projets réels, en restant fiable sur la durée.`,
   ],
 };
 
@@ -23,25 +22,28 @@ export const softSkills = [
 ];
 
 export const languages = [
+  { name: "Malagasy", level: 100 },
   { name: "Français", level: 100 },
   { name: "Anglais", level: 80 },
 ];
 
-export const devSkills = [
-  "HTML", "CSS", "JavaScript", "React.js", "Angular", "Tailwind CSS",
-  "Node.js", "Express.js", "Java / Spring Boot", "PHP", "Laravel", "Python",
-  "MySQL", "PostgreSQL", "MongoDB", "API REST", "Git / GitHub", "Design responsive",
-];
-
-export const netSkills = [
-  "Windows Server", "Linux (Ubuntu)", "TCP/IP", "DNS", "DHCP",
-  "VPN", "SSH", "VLAN", "ACL", "Active Directory",
-  "Virtualisation", "Zabbix", "Sécurité IT (bases)", "Bash", "Dépannage",
-];
-
-export const tools = [
-  "Git", "GitHub", "VS Code", "Postman", "Claude Code", "N8N", "Odoo",
-  "Linux", "Cisco Packet Tracer", "VirtualBox", "VMware",
+export const skillGroups: { title: string; items: string[] }[] = [
+  {
+    title: "Frontend",
+    items: ["HTML / CSS", "JavaScript", "React.js", "Angular", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js + Express.js", "Java / Spring Boot", "PHP / Laravel", "Python"],
+  },
+  {
+    title: "Base de données",
+    items: ["PostgreSQL", "MySQL", "MongoDB"],
+  },
+  {
+    title: "Outils & Système",
+    items: ["Git / GitHub", "Claude Code", "Linux", "N8N", "Odoo"],
+  },
 ];
 
 export const experience: {
@@ -54,11 +56,11 @@ export const experience: {
 }[] = [
   {
     date: "2026 – En cours",
-    company: "Monétique",
+    company: "LovaTech",
     role: "Stage — Développement Web",
     description:
       "Développement web et automatisation de processus, avec intégration d'outils d'IA et de workflows.",
-    stack: ["Python", "JavaScript", "XML", "PostgreSQL", "SEO", "N8N", "Odoo"],
+    stack: ["Python", "JavaScript", "XML", "PostgreSQL", "HTML", "CSS", "SEO", "N8N", "Odoo"],
     active: true,
   },
   {
@@ -71,7 +73,7 @@ export const experience: {
     active: false,
   },
   {
-    date: "3 mois",
+    date: "2024 · 3 mois",
     company: "FY-TECH",
     role: "Stage — Intégrateur Web",
     description:
@@ -81,55 +83,34 @@ export const experience: {
   },
 ];
 
-export type ProjectCategory = "dev" | "net";
-
 export const projects: {
   title: string;
-  category: ProjectCategory;
   description: string;
   stack: string[];
 }[] = [
   {
+    title: "Application de gestion immobilière",
+    description:
+      "Application full-stack de gestion de biens (locations & ventes) développée en stage chez R&R Development.",
+    stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+  },
+  {
+    title: "Site vitrine — agence de voiture",
+    description:
+      "Intégration d'un site vitrine responsive pour une agence de location de voitures, réalisé en stage chez FY-TECH.",
+    stack: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     title: "EcoTourMg",
-    category: "dev",
     description:
       "Application web full-stack reliant les touristes aux communautés locales à Madagascar.",
     stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL"],
   },
   {
-    title: "Mitady-Trano",
-    category: "dev",
-    description:
-      "Plateforme immobilière : gestion de locations et de ventes avec recherche et filtres avancés.",
-    stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MySQL"],
-  },
-  {
     title: "FormaPlus",
-    category: "dev",
     description:
       "Gestion d'un centre de formation : étudiants, cours, formateurs et paiements.",
     stack: ["PHP", "Laravel", "Blade", "MySQL"],
-  },
-  {
-    title: "Mise en place d'un labo IT",
-    category: "net",
-    description:
-      "Installation et configuration d'Active Directory, DNS et DHCP sous Windows Server en environnement virtuel, avec gestion des utilisateurs et des groupes.",
-    stack: ["Windows Server", "Active Directory", "DNS", "DHCP", "Virtualisation"],
-  },
-  {
-    title: "Simulation réseau d'entreprise",
-    category: "net",
-    description:
-      "Conception d'un réseau d'entreprise sous Cisco Packet Tracer : VLAN, routage inter-VLAN, DHCP et listes de contrôle d'accès (ACL).",
-    stack: ["Cisco Packet Tracer", "VLAN", "DHCP", "ACL"],
-  },
-  {
-    title: "Supervision système",
-    category: "net",
-    description:
-      "Déploiement d'une solution de supervision Zabbix suivant la disponibilité des services et les ressources système.",
-    stack: ["Zabbix", "Linux", "Supervision"],
   },
 ];
 
@@ -138,33 +119,39 @@ export const personalProjectsNote =
 
 export const education = [
   {
-    date: "2023 – 2026",
+    date: "2026",
     school: "EMIT Fianarantsoa",
-    detail: "Licence en Développement d'Applications Internet / Intranet",
+    detail: "Licence 3 en Développement d'Applications Internet / Intranet",
     active: true,
   },
   {
-    date: "2022 – 2023",
-    school: "FSTE Mahajanga",
-    detail: "1ʳᵉ année de Licence en Sciences de la Matière et des Structures",
+    date: "2025",
+    school: "EMIT Fianarantsoa",
+    detail: "Licence 2 en Développement d'Applications Internet / Intranet",
+    active: false,
+  },
+  {
+    date: "2024",
+    school: "EMIT Fianarantsoa",
+    detail: "Licence 1 en Développement d'Applications Internet / Intranet",
     active: false,
   },
 ];
 
 export const learningResources = [
   {
-    title: "Autoformation développement",
+    title: "Autoformation frontend",
     items: "freeCodeCamp · MDN Web Docs · Traversy Media · Web Dev Simplified",
   },
   {
-    title: "Autoformation systèmes & réseaux",
-    items: "Cisco Networking Academy · ITProTV · LinkedIn Learning",
+    title: "Autoformation backend & outils",
+    items: "The Odin Project · Laracasts · Spring Academy · documentation officielle",
   },
 ];
 
 export const stats = [
+  { value: 3, label: "Stages en entreprise" },
   { value: 6, label: "Projets réalisés" },
-  { value: 2, label: "Domaines maîtrisés" },
   { value: 15, label: "Technologies pratiquées" },
   { value: 3, label: "Années de formation EMIT" },
 ];

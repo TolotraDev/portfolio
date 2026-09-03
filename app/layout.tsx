@@ -25,9 +25,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tolotra Nomenjanahary — Développeur Full Stack & Administrateur Systèmes & Réseaux",
+  title: "Tolotra Nomenjanahary — Développeur Full Stack",
   description:
-    "Portfolio de Tolotra Nomenjanahary, étudiant à l'EMIT Fianarantsoa, développeur full-stack et administrateur systèmes & réseaux à la recherche d'un stage.",
+    "Portfolio de Tolotra Nomenjanahary, étudiant à l'EMIT Fianarantsoa, développeur web full-stack à la recherche d'un stage.",
 };
 
 export default function RootLayout({

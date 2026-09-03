@@ -59,8 +59,8 @@ export function Hero() {
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
                 Étudiant en informatique à l&apos;EMIT Fianarantsoa, je conçois des applications web de
-                bout en bout et je mets en place des infrastructures IT fiables. Deux compétences,
-                une même exigence&nbsp;: comprendre le système avant de le construire.
+                bout en bout, du premier écran au dernier endpoint. Une même exigence&nbsp;:
+                comprendre comment les pièces s&apos;assemblent avant de construire.
               </p>
 
               <div className="mt-9 flex flex-wrap items-center gap-3">
