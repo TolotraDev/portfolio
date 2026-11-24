@@ -2,6 +2,8 @@ export const profile = {
   name: "Tolotra Nomenjanahary",
   roles: ["Développeur Full Stack", "Développeur Web", "Frontend & Backend"],
   location: "Mahajanga, Madagascar",
+  timezone: "Indian/Antananarivo",
+  status: "Disponible pour un stage",
   email: "tanjoniainatolotra6@gmail.com",
   phone: "+261 34 71 357 18",
   phoneHref: "+261347135718",
@@ -170,6 +172,24 @@ export const cv = {
   href: "/cv/cv.pdf",
   label: "Télécharger mon CV",
 };
+
+export const marquee = [
+  "React.js",
+  "TypeScript",
+  "Node.js",
+  "Express.js",
+  "Spring Boot",
+  "Laravel",
+  "Angular",
+  "Tailwind CSS",
+  "PostgreSQL",
+  "MongoDB",
+  "Python",
+  "N8N",
+  "Odoo",
+  "Git",
+  "Linux",
+];
 
 export const navLinks = [
   { href: "#profil", label: "Profil" },
